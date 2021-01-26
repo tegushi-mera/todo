@@ -7,6 +7,12 @@
 </head>
 <body>
     <h2>Это тестовая страниц</h2>
-    <h2>Rayana you are beauteful</h2>
+    <h2>Rayana you are beautiful</h2>
+    <!-- {{ todo_list }} -->
+    {% for todo in todo_list %}
+        <h3>{{ todo.text }} - {{ todo.created_at }}
+        </h3>
+
+    {% endfor %}
 </body>
 </html>
